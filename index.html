@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Sky</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="margin: 2em; display: block; background: linear-gradient(to right,#336699,#adadeb);">
+    <div class="wrapper">
+        <div class="data">
+            <div class="data-content">
+                <div class="columns">
+                    <div class="latitude">
+                        <label class="label">Latitude</label>
+                        <input id="lat" class="input" type="text">
+                    </div>
+                    <div class="longitude">
+                        <label class="label">Longitude</label>
+                        <input id="lon" class="input" type="text">
+                    </div>
+                    <div class="date">
+                        <label class="label">Date</label>
+                        <input id="date" class="input" type="date" min="2020-01-01">
+                    </div>
+                    <input class="btn" type="submit" id="check" value="Check">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="error" class="error"> </div>
+    <div class="card">
+        <div class="explicit">
+            <p class="location">
+                <span id="station_name">Choose the latitude, longitude and date</span>
+            </p>
+
+            <p class="title">
+                <span id="max_temp" class="max"><i class='fas fa-sun'></i>?°C/</span>
+                <span id="min_temp" class="min"><i class='fas fa-moon'></i>?°C</span>
+            </p>
+            
+            <div class="details">
+                <span id="rain" class="rain">
+                    <i class="fa-solid fa-cloud-rain"></i> Precipitations: -mm/h
+                </span>
+                <span id="wind" class="wind">
+                    <i class="fa-solid fa-wind"></i> Average wind speed: -km/h
+                </span>
+                <span id="chance" class="chance">
+                    <i class='fas fa-cloud-sun'></i> Average cloud cover: -%
+                </span>
+                <span id="humidity" class="humidity">
+                    <i class='fas fa-water'></i> Humidity: -%
+                </span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <div id="img" class="img"></div>
+        </div>
+
+    </div>
+    <div class="cards">
+        <div class="divv">
+            <div class="hour">
+                <p class="seven">
+                    <span >7:00</span>
+                </p>
+                <div class="mini_icon">
+                    <div id="mini_img1" class="mini_img">
+                        <i class='fas fa-cloud-sun'></i>
+                    </div>
+                </div>
+                <p class="celsius">
+                    <span id="temp7">-°C</span>
+                </p>
+            </div>
+            <div class="hour">
+                <p class="seven">
+                    <span>11:00</span>
+                </p>
+                <div class="mini_icon">
+                    <div id="mini_img2" class="mini_img">
+                        <i class='fas fa-cloud-sun'></i>
+                    </div>
+                </div>
+                <p class="celsius">
+                    <span id="temp11">-°C</span>
+                </p>
+            </div>
+        </div>
+        <div class="divv">
+            <div class="hour">
+                <p class="seven">
+                    <span>15:00</span>
+                </p>
+                <div class="mini_icon">
+                    <div id="mini_img3" class="mini_img">
+                        <i class='fas fa-cloud-sun'></i>
+                    </div>
+                </div>
+                <p class="celsius">
+                    <span id="temp15">-°C</span>
+                </p>
+            </div>
+            <div class="hour">
+                <p class="seven">
+                    <span>19:00</span>
+                </p>
+                <div class="mini_icon">
+                    <div id="mini_img4" class="mini_img">
+                        <i class='fas fa-cloud-sun'></i>
+                    </div> 
+                </div>
+                <p class="celsius">
+                    <span id="temp19">-°C</span>
+                </p>
+            </div>
+        </div>
+        <div class="divvl">
+            <div class="hour">
+                <p class="seven">
+                    <span>23:00</span>
+                </p>
+                <div class="mini_icon">
+                    <div id="mini_img5" class="mini_img">
+                        <i class='fas fa-cloud-moon'></i>
+                    </div>
+                </div>
+                <p class="celsius">
+                    <span id="temp23">-°C</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

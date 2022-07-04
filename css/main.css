@@ -1,0 +1,328 @@
+.wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.wrapper .data {
+  background-color: rgba(0, 0, 0, 0.6274509804);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  max-width: 70%;
+  margin: 3em;
+  border-radius: 0.2em;
+  color: white;
+}
+.wrapper .data .data-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.wrapper .data .data-content .columns {
+  margin: 1em;
+  display: flex;
+}
+.wrapper .data .data-content .columns .latitude {
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+.wrapper .data .data-content .columns .longitude {
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+.wrapper .data .data-content .columns .date {
+  margin-top: 2em;
+  margin-left: 4em;
+  margin-bottom: 1em;
+}
+.wrapper .data .data-content .columns .date .input {
+  font-size: 1.45em;
+}
+.wrapper .data .data-content .columns .btn {
+  margin: 2em;
+  margin-left: 3em;
+  font-size: 1.2em;
+  border-radius: 3em;
+  background-color: #adadeb;
+}
+.wrapper .data .data-content .columns .label {
+  font-size: 1.5em;
+}
+.wrapper .data .data-content .columns .input {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+}
+
+.error {
+  margin-left: 5em;
+  margin-top: 2em;
+  font-size: 1.4em;
+  color: rgb(135, 12, 12);
+}
+
+.card {
+  margin: 5em;
+  display: flex;
+  box-shadow: 0 1em 1em -0.3em rgba(20, 20, 20, 0.2), 0 0 0 2px rgba(0, 10, 10, 0.02);
+  max-width: 100%;
+  border-radius: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.card .explicit {
+  display: block;
+  font-size: 1.3em;
+  width: 50%;
+}
+.card .explicit .location {
+  margin: 0.7em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.card .explicit .max {
+  margin-left: 0.5em;
+  font-size: 2em;
+}
+.card .explicit .min {
+  font-size: 2em;
+  color: rgb(62, 55, 55);
+}
+.card .explicit .details {
+  display: block;
+}
+.card .explicit .details .rain {
+  display: block;
+  margin: 1em;
+}
+.card .explicit .details .wind {
+  display: block;
+  margin: 1em;
+}
+.card .explicit .details .chance {
+  display: block;
+  margin: 1em;
+}
+.card .explicit .details .humidity {
+  display: block;
+  margin: 1em;
+}
+.card .icon {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.card .icon .img {
+  margin: auto;
+  width: 50%;
+  font-size: 10em;
+}
+
+.cards {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.cards .divv {
+  display: flex;
+  margin: 4em;
+  max-width: 33%;
+}
+.cards .divv .hour {
+  margin: 3em;
+  display: block;
+  max-width: 50%;
+  box-shadow: 0 1em 1em -0.3em rgba(20, 20, 20, 0.2), 0 0 0 2px rgba(0, 10, 10, 0.02);
+  border-radius: 1em;
+}
+.cards .divv .hour .seven {
+  margin-left: 4.5em;
+  margin-right: 4em;
+  font-size: 1.5em;
+}
+.cards .divv .hour .mini_icon {
+  margin-left: 1.7em;
+  margin-right: 1.3em;
+  font-size: 4em;
+}
+.cards .divv .hour .celsius {
+  margin-left: 4.5em;
+  margin-right: 4.3em;
+  font-size: 1.5em;
+}
+.cards .divvl {
+  display: flex;
+  max-width: 33%;
+  margin: 4em;
+}
+.cards .divvl .hour {
+  margin: 3em;
+  display: block;
+  max-width: 100%;
+  box-shadow: 0 1em 1em -0.3em rgba(20, 20, 20, 0.2), 0 0 0 2px rgba(0, 10, 10, 0.02);
+  border-radius: 1em;
+}
+.cards .divvl .hour .seven {
+  margin-left: 4.5em;
+  margin-right: 4em;
+  font-size: 1.5em;
+}
+.cards .divvl .hour .mini_icon {
+  margin-left: 1.7em;
+  margin-right: 1.3em;
+  font-size: 4em;
+}
+.cards .divvl .hour .celsius {
+  margin-left: 4.5em;
+  margin-right: 4.3em;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1445px) {
+  .wrapper .data .data-content {
+    margin-right: 3em;
+  }
+  .wrapper .data .data-content .columns {
+    margin: 1em;
+    display: block;
+  }
+}
+@media only screen and (max-width: 935px) {
+  .card .explicit .max {
+    display: block;
+  }
+  .card .explicit .min {
+    display: block;
+    margin-left: 0.5em;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .card {
+    margin: 7em;
+    display: block;
+  }
+  .card .explicit {
+    max-width: 100%;
+    margin: 5em;
+  }
+  .card .icon {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card .icon .img {
+    margin: auto;
+    width: 10%;
+    font-size: 10em;
+  }
+
+  .cards {
+    display: block;
+  }
+  .cards .divv {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+  }
+  .cards .divv .hour {
+    width: 50%;
+  }
+  .cards .divv .hour .seven {
+    marker-mid: inherit;
+    margin-left: 2.5em;
+    margin-right: 5em;
+  }
+  .cards .divv .hour .mini_icon {
+    margin-left: 0.7em;
+    margin-right: 1.3em;
+    font-size: 4em;
+  }
+  .cards .divv .hour .celsius {
+    margin-left: 2.5em;
+    margin-right: 4.3em;
+    font-size: 1.5em;
+  }
+  .cards .divvl {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+  }
+  .cards .divvl .hour {
+    width: 100%;
+  }
+  .cards .divvl .hour .seven {
+    marker-mid: inherit;
+    margin-left: 2.5em;
+    margin-right: 5em;
+  }
+  .cards .divvl .hour .mini_icon {
+    margin-left: 0.8em;
+  }
+  .cards .divvl .hour .celsius {
+    margin-left: 2.5em;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .cards {
+    display: block;
+  }
+  .cards .divv {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .card {
+    margin: 1em;
+  }
+  .card .explicit {
+    margin: 2em;
+  }
+  .card .explicit .max {
+    display: block;
+    font-size: 1.9em;
+  }
+  .card .explicit .min {
+    display: block;
+    margin-left: 0.5em;
+    font-size: 1.9em;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .cards {
+    margin: -2em;
+  }
+  .cards .divv .hour .seven {
+    margin-left: 2em;
+    margin-right: 4em;
+    font-size: 1.5em;
+  }
+  .cards .divv .hour .mini_icon {
+    margin-left: 0.7em;
+    margin-right: 1.3em;
+    font-size: 4em;
+  }
+  .cards .divv .hour .celsius {
+    margin-left: 2.1em;
+    margin-right: 4.3em;
+    font-size: 1.5em;
+  }
+  .cards .divv1 .hour .seven {
+    margin-left: 2.5em;
+    margin-right: 10em;
+    font-size: 1.5em;
+  }
+  .cards .divv1 .hour .mini_icon {
+    margin-left: 0.7em;
+    margin-right: 1.3em;
+    font-size: 4em;
+  }
+  .cards .divv1 .hour .celsius {
+    margin-left: 2.1em;
+    margin-right: 4.3em;
+    font-size: 1.5em;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,343 @@
+.wrapper{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    .data{
+        background-color: #000000a0;
+        box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+        max-width: 70%;
+        margin: 3em;
+        border-radius: 0.2em;
+        color: white;
+        .data-content{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            .columns{
+                margin: 1em;
+                display: flex;
+                .latitude{
+                    margin-top: 2em;
+                    margin-left: 3em;
+                    margin-bottom: 1em;  
+                }
+                .longitude{
+                    margin-top: 2em;
+                    margin-left: 3em;
+                    margin-bottom: 1em;
+                }
+                .date{
+                    margin-top: 2em;
+                    margin-left: 4em;
+                    margin-bottom: 1em;
+                    .input{
+                        font-size: 1.45em;
+                    }
+                }
+                .btn{
+                    margin: 2em;
+                    margin-left: 3em;
+                    font-size: 1.2em;
+                    border-radius: 3em;
+                    background-color: #adadeb;
+                }
+                .label{
+                    font-size: 1.5em;
+                }
+                .input{
+                    display: block;
+                    margin-top: 0.5em;
+                    font-size: 1.2em;
+                    border-radius: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+.error{
+    margin-left: 5em;
+    margin-top: 2em;
+    font-size: 1.4em;
+    color: rgb(135, 12, 12);
+}
+
+.card{
+    margin: 5em;
+    display: flex;
+    box-shadow: 0 1em 1em -0.3em rgb(20 20 20 / 20%), 0 0 0 2px rgb(0 10 10 / 2%);
+    max-width: 100%;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    .explicit{
+        display: block;
+        font-size: 1.3em;
+        width: 50%;
+        .location{
+            margin:0.7em;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .max{
+            margin-left: 0.5em;
+            font-size: 2em;
+        }
+        .min{
+            font-size: 2em;
+            color: rgb(62, 55, 55);
+        }
+        .details{
+            display: block;
+            .rain{
+                display: block;
+                margin: 1em;
+            }
+            .wind{
+                display: block;
+                margin: 1em;
+            }
+            .chance{
+                display: block;
+                margin: 1em;
+            }
+            .humidity{
+                display: block;
+                margin: 1em;
+            }
+        }
+    }
+    .icon{
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        .img{
+            margin: auto;
+            width: 50%;
+            font-size: 10em;
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    .divv{
+        display: flex;
+        margin: 4em;
+        max-width: 33%;
+        .hour{
+            margin: 3em;
+            display: block;
+            max-width: 50%;
+            box-shadow: 0 1em 1em -0.3em rgb(20 20 20 / 20%), 0 0 0 2px rgb(0 10 10 / 2%);
+            border-radius: 1em;
+            .seven{
+                margin-left: 4.5em;
+                margin-right: 4em;
+                font-size: 1.5em;
+            }
+            .mini_icon{
+                margin-left: 1.7em;
+                margin-right: 1.3em;
+                font-size: 4em;
+            }
+            .celsius{
+                margin-left: 4.5em;
+                margin-right: 4.3em;
+                font-size: 1.5em;
+            }
+        }
+    }
+    .divvl{
+        display: flex;
+        max-width: 33%;
+        margin: 4em;
+        .hour{
+            margin: 3em;
+            display: block;
+            max-width: 100%;
+            box-shadow: 0 1em 1em -0.3em rgb(20 20 20 / 20%), 0 0 0 2px rgb(0 10 10 / 2%);
+            border-radius: 1em;
+            .seven{
+                margin-left: 4.5em;
+                margin-right: 4em;
+                font-size: 1.5em; 
+            }
+            .mini_icon{
+                margin-left: 1.7em;
+                margin-right: 1.3em;
+                font-size: 4em;
+            }
+            .celsius{
+                margin-left: 4.5em;
+                margin-right: 4.3em;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1445px){
+    .wrapper{
+        .data{
+            .data-content{
+                margin-right: 3em;
+                .columns{
+                    margin: 1em;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 935px){
+    .card{
+        .explicit{
+            .max{
+                display: block;
+            }
+            .min{
+                display: block;
+                margin-left: 0.5em; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .card{
+        margin: 7em;
+        display: block;
+        .explicit{
+            max-width: 100%;
+            margin: 5em;
+        }
+        .icon{
+            max-width: 100%;
+            align-items: center;
+            justify-content: center;
+            .img{
+                margin: auto;
+                width: 10%;
+                font-size: 10em;
+            }
+        }
+    }
+    .cards{
+        display: block;
+        .divv{
+            width: fit-content;
+            display: block;
+            .hour{
+                width: 50%;
+                .seven{
+                    marker-mid: inherit;
+                    margin-left: 2.5em;
+                    margin-right: 5em;
+                }
+                .mini_icon{
+                    margin-left: 0.7em;
+                    margin-right: 1.3em;
+                    font-size: 4em;
+                }
+                .celsius{
+                    margin-left: 2.5em;
+                    margin-right: 4.3em;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .divvl{
+            width: fit-content;
+            display: block;
+            .hour{
+                width: 100%;
+                .seven{
+                    marker-mid: inherit;
+                    margin-left: 2.5em;
+                    margin-right: 5em;
+                }
+                .mini_icon{
+                    margin-left: 0.8em;
+                }
+                .celsius{
+                    margin-left: 2.5em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .cards{
+        display: block;
+        .divv{
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .card{
+        margin: 1em;
+        .explicit{
+            margin: 2em;
+            .max{
+                display: block;
+                font-size: 1.9em;
+            }
+            .min{
+                display: block;
+                margin-left: 0.5em; 
+                font-size: 1.9em;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 475px){
+    .cards{
+        margin: -2em;
+        .divv{
+            .hour{
+                .seven{
+                    margin-left: 2em;
+                    margin-right: 4em;
+                    font-size: 1.5em;
+                }
+                .mini_icon{
+                    margin-left: 0.7em;
+                    margin-right: 1.3em;
+                    font-size: 4em;
+                }
+                .celsius{
+                    margin-left: 2.1em;
+                    margin-right: 4.3em;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .divv1{
+            .hour{
+                .seven{
+                    margin-left: 2.5em;
+                    margin-right: 10em;
+                    font-size: 1.5em;
+                }
+                .mini_icon{
+                    margin-left: 0.7em;
+                    margin-right: 1.3em;
+                    font-size: 4em;
+                }
+                .celsius{
+                    margin-left: 2.1em;
+                    margin-right: 4.3em;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
